@@ -1,0 +1,10 @@
+{
+  "name": "kwoncoin",
+  "version": "1.0.0",
+  "description": "kwoncoin is very personal coin for me to train react and nodejs.",
+  "main": "src/server.js",
+  "repository": "https://github.com/Sangkwun/kwoncoin.git",
+  "author": "Sangkwun <wer2774@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
