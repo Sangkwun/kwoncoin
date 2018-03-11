@@ -48,7 +48,7 @@ const createNewBlock = data => {
         newTimeStamp,
         data
     )
-
+    addBlockToChain(newBlock);
     return newBlock;
 }
 
@@ -111,11 +111,14 @@ const replaceChain = candidateChain => {
 
 const addBlockToChain = candidateBlock => {
     if (isNewBlockValid(candidateBlock, getLastBlock())) {
-        getBlockChain().push(candidateBlock);
+        blockchain.push(candidateBlock);
         return true;
     }else{
         return false;
     }
 }
 
-console.log(blockchain)
+module.exports = {
+    getBlockChain,
+    createNewBlock
+}
